@@ -1,0 +1,37 @@
+.navbar{
+background-color: rgb(192, 15, 15);
+
+}
+.navdiv{
+    display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: yellow;
+}
+
+   li{
+    list-style: none;
+    display: inline-block;
+    
+    
+   }
+   img{
+    width: 150px;
+    height: 90px;
+   }
+
+   button{
+    width: ;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    font-family: apple apple-system;
+   }

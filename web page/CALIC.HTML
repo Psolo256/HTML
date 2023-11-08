@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> chatline Calculator</title>
+<link rel="stylesheet" href="CALIC.CSS">
+
+</head>
+<body>
+<div class="calculator">
+<input type="text" id="result" placeholder="0" readonly>
+
+<input type="button" value="1" onclick="appendNumber('1')">
+<input type="button" value= "2" onclick="appendNumber('2')">
+<input type="button" value= "3" onclick="appendNumber('3')">
+<input type="button" value= "+" onclick="appendOperator('+')"><br>
+
+<input type="button" value= "4" onclick="appendNumber('4')">
+<input type="button" value= "5" onclick="appendNumber('5')">
+<input type="button" value= "6" onclick="appendNumber('6')">
+<input type="button" value= "-" onclick="appendOperator('-')"><br>
+
+<input type="button" value= "7" onclick="appendNumber('7')">
+<input type="button" value= "8" onclick="appendNumber('8')">
+<input type="button" value= "9" onclick="appendNumber('9')">
+<input type="button" value= "*" onclick="appendOperator('*')"><br>
+
+<input type="button" value= "0" onclick="appendNumber('0')">
+<input type="button" value= "." onclick="appendDecimal()">
+<input type="button" value= "C" onclick="clearResult()">
+<input type="button" value= "/" onclick="appendOperator('/')"><br>
+
+<input type="button" id="equals" value= "=" onclick="calculate()"><br>
+</div>
+
+<script>
+function appendNumber(number) {
+document.getElementById("result").value += number;
+}
+
+function appendOperator(operator) {
+document.getElementById("result").value += operator;
+}
+
+function appendDecimal() {
+document.getElementById("result").value += ".";
+}
+
+function clearResult() {
+document.getElementById("result").value = "";
+}
+
+function calculate() {
+var result = document.getElementById("result").value;
+var calculatedResult = eval(result);
+document.getElementById("result").value = calculatedResult;
+}
+</script>
+
+</body>
+</html>

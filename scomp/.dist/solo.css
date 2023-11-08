@@ -1,0 +1,45 @@
+body {
+    background-color: #23a665;
+    margin: 20px;
+
+}
+ 
+input{ 
+    padding: 10px;
+    margin: 5px;
+}
+
+#color input{
+padding: 0px;
+}
+.menu{
+    background-color: #1526e0;
+    padding: 6px;
+    border-radius: 12px;
+    margin: 0;
+}
+
+li{
+    display: inline;
+    list-style: none;
+    padding: 20px;
+    font-size: 18px;
+    margin: 5px;
+
+}
+
+li a {
+    text-decoration: none;
+color: white;
+    border-radius: 30px;
+}
+
+a:hover{
+    background-color: orangered;
+    padding: 12px;
+}
+
+div input{
+    background-color: #911717;
+ 
+}
